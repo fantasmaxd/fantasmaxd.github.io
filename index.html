@@ -1,0 +1,68 @@
+<html>
+<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>PLAYSTATION 4</title>
+<link rel="stylesheet" href="Style_03.css">
+</head>
+<body>
+<div id=BGD>
+<div class="navbarBG">	
+<div class="navbar" onclick="Hide()">
+	
+	<a href="#" onclick="Hen()" onmouseover="ChangeText('<h1>HEN</h1><hr><i>ATIVA HOMEBREW, ATIVA CONFIGURAÇÕES DE DEPURAÇÃO, SUPORTE AO HD EXTERNO</i>')" onmouseout="DefaultText()">HEN</a>
+	<a href="#" onclick="VR()" onmouseover="ChangeText('<h1>REALIDADE VIRTUAL</h1><hr><i>HABILITA SUPORTE AO DISPOSITIVO DE REALIDADE VIRTUAL</i>')" onmouseout="DefaultText()">VR</a>
+	<a href="#" onclick="Remoteplay()" onmouseover="ChangeText('<h1>REPRODUÇÃO REMOTA</h1><hr><i>ATIVA A OPÇÃO DE SINCRONIZAÇÃO DE TELA COM O PC OU SMARTPHONE</i>')" onmouseout="DefaultText()">REPRODUÇÃO REMOTA</a>
+	<a href="#" onclick="FTP()" onmouseover="ChangeText('<h1>SERVIDOR FTP</h1><hr><i>SERVIDOR FTP PARA O PS4</i>')" onmouseout="DefaultText()">FTP</a>
+	<a href="#" onclick="Dumper()" onmouseover="ChangeText('<h1>DUMPER</h1><hr><i>CRIE O DUMPER DE SEU DISCO</i>')" onmouseout="DefaultText()">DUMPER</a>
+	<a href="#" onclick="AppToUsb()" onmouseover="ChangeText('<h1>APP PARA USB</h1><hr><i>MOVER JOGOS INSTALADOS PARA UMA UNIDADE USB EXTERNA<br>COLOQUE APPTOUSB.INI NA PASTA PS4 NA RAIZ DA UNIDADE USB</i>')" onmouseout="DefaultText()">APP PARA USB</a>
+	<a href="#" onclick="DB_GS_Backup()" onmouseover="ChangeText('<h1>BACKUP DE BANCO DE DADOS E SALVAMENTOS DE JOGOS</h1><hr><i>CRIE UM BACKUP DE SALVAMENTOS DE JOGOS, DADOS DO USUÁRIO E ARQUIVOS .DB IMPORTANTES</i>')" onmouseout="DefaultText()">BACKUP DO BANCO DE DADOS</a>
+
+
+
+
+<div class="dropdown">
+	<button class="dropbtn" onmouseover="ChangeText('<h1>FERRAMENTAS E UTILITÁRIOS</h1><hr><i>VÁRIAS FERRAMENTAS E UTILITÁRIOS PARA USO NO PS4</i>')" onmouseout="DefaultText()">FERRAMENTAS</button>
+	<div class="dropdown-content">
+		<a href="#" onclick="Disableup()" onmouseover="ChangeText('<h1>DESABILITAR ATUALIZAÇÕES</h1><hr><i>DESABILITA AS ATUALIZAÇÕES DO PS4</i>')" onmouseout="DefaultText()">DESABILITAR ATUALIZAÇÕES</a>
+		<a href="#" onclick="Enableup()" onmouseover="ChangeText('<h1>HABILITAR ATUALIZAÇÕES</h1><hr><i>HABILITA A ATUALIZAÇÃO DO PS4</i>')" onmouseout="DefaultText()">HABILITAR ATUALIZAÇÕES</a>
+		<a href="#" onclick="Binloader()" onmouseover="ChangeText('<h1>CARREGAR BIN</h1><hr><i>CARREGUE ARQUIVOS .BIN</i>')" onmouseout="DefaultText()">CARREGAR ARQUIVOS BIN</a>
+		<a href="#" onclick="Historyblocker()" onmouseover="ChangeText('<h1>BLOQUEADOR DE HISTÓRICO</h1><hr><i>DESATIVE O CARREGAMENTO AUTOMÁTICO DA ÚLTIMA PÁGINA VISITADA OU ATIVE </i>')" onmouseout="DefaultText()">BLOQUEAR HISTÓRICO</a>
+		<a href="#" onclick="Todex()" onmouseover="ChangeText('<h1>TODEX</h1><hr><i>OPÇÕES ADICIONAIS DEBUG</i>')" onmouseout="DefaultText()">TODEX</a>
+		<a href="#" onclick="OffLineCache()" onmouseover="ChangeText('<h1>ARMAZENAMENTO EM CACHE</h1><hr><i>SALVE TODO CONTEÚDO DA PÁGINA NO SEU PS4</i>')" onmouseout="DefaultText()">ARMAZENAMENTO EM CACHE</a>
+	</div>
+</div> 
+
+</div>
+</div>
+
+
+<div id="content" class="content">
+<div class=logo>
+<a href="#" onclick="Hide(); Hen()"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" border=0 width=300 height=75></a>
+</div>
+</div>
+
+<div id="footer">APENAS PARA FIRMWARE 5.05 - PLAYSTATION 4</div>
+
+</div>
+<script>
+function ChangeText(text){var display = document.getElementById('text-display');display.innerHTML = "";display.innerHTML = text;}
+function Hide(){var x = document.querySelectorAll(".dropdown-content, #text-display"); var i; for (i = 0; i < x.length; i++) {x[i].style.display="none";}}
+function VR(){document.getElementById("content").innerHTML='<object type="text/html" data="505-VR.html" style="width:100%; height:100%;"></object>';}
+function Hen(){document.getElementById("content").innerHTML='<object type="text/html" data="505-HEN.html" style="width:100%; height:100%;"></object>';}
+function Remoteplay(){document.getElementById("content").innerHTML='<object type="text/html" data="505-REMOTEPLAY.html" style="width:100%; height:100%;"></object>';}
+function FTP(){document.getElementById("content").innerHTML='<object type="text/html" data="505-FTP.html" style="width:100%; height:100%;"></object>';}
+function Dumper(){document.getElementById("content").innerHTML='<object type="text/html" data="505-DUMPER.html" style="width:100%; height:100%;"></object>';}
+function AppToUsb(){document.getElementById("content").innerHTML='<object type="text/html" data="505-APPTOUSB.html" style="width:100%; height:100%;"></object>';}
+function DB_GS_Backup(){document.getElementById("content").innerHTML='<object type="text/html" data="505-DBBACKUP.html" style="width:100%; height:100%;"></object>';}
+
+function Enableup(){document.getElementById("content").innerHTML='<object type="text/html" data="505-ENABLEATT.html" style="width:100%; height:100%;"></object>';}
+function Disableup(){document.getElementById("content").innerHTML='<object type="text/html" data="505-DISABLEATT.html" style="width:100%; height:100%;"></object>';}
+function Binloader(){document.getElementById("content").innerHTML='<object type="text/html" data="505-BINLOADER.html" style="width:100%; height:100%;"></object>';}
+function Historyblocker(){document.getElementById("content").innerHTML='<object type="text/html" data="505-HISTORYBLOCKER.html" style="width:100%; height:100%;"></object>';}
+function Todex(){document.getElementById("content").innerHTML='<object type="text/html" data="505-TODEX.html" style="width:100%; height:100%;"></object>';}
+
+function OffLineCache(){document.getElementById("content").innerHTML='<object type="text/html" data="Cache_Install_1.html" style="width:100%; height:100%;"></object>';}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ARMAZENAMENTO EM CACHE</title>
+<link rel="stylesheet" href="Style_03.css">
+<script>
+function ondownloading(){changeText("I N S T A L A N D O &nbsp; C A C H E &nbsp; O F F L I N E<br>P O R &nbsp; F A V O R &nbsp; A G U A R D E ...");}
+function oncached(){changeText("I N S T A L A Ç Ã O &nbsp; E M &nbsp; C A C H E &nbsp; C O N C L U Í D A !<br><div class=ib>P R E S S I O N E&nbsp;</div><div id=PSBUTTON></div><div class=ib>&nbsp;P A R A &nbsp;S A I R</div>");}
+function onupdateready(){changeText("C A C H E &nbsp; F O I &nbsp; A T U A L I Z A D O<br><div class=ib>P R E S S I O N E&nbsp;</div><div id=PSBUTTON></div><div class=ib>&nbsp;P A R A &nbsp;S A I R</div>");}
+function onnoupdate(){changeText("N Ã O &nbsp; H Á &nbsp; N O V A S &nbsp; A T U A L I Z A Ç Õ E S &nbsp; A T U A L M E N T E<br><div class=ib>P R E S S I O N E&nbsp;</div><div id=PSBUTTON></div><div class=ib>&nbsp;P A R A &nbsp;S A I R</div>");}
+function onerror(){changeText("E R R O &nbsp; E M &nbsp; C A C H E !<br><div class=ib>P R E S S I O N E&nbsp;</div><div id=PSBUTTON></div><div class=ib>&nbsp;P A R A &nbsp;S A I R</div>");}
+function changeText(text){var display = document.getElementById('text-display'); display.innerHTML = ""; display.innerHTML = text;}
+</script>
+</head>
+<body>
+<br>
+<div id=Title>ARMAZENAMENTO EM CACHE - OFFLINE</div>
+<div id="text-display" class="info"></div>
+<iframe style=border:none; src="Cache_Install_2.html"></iframe>
+</body>
+</html>
